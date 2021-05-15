@@ -1,7 +1,8 @@
 // глобальные стили кроме normalize
 .page-wrapper {
   color: $white;
-  background-color: burlywood;
+  background-color: $black;
+  min-height: 100vh
 }
 .container {
 	@include make-container();
