@@ -1,5 +1,8 @@
 // глобальные стили кроме normalize
-
+.page-wrapper {
+  color: $white;
+  background-color: burlywood;
+}
 .container {
 	@include make-container();
 	@include make-container-max-widths();

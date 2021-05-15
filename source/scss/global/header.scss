@@ -1,0 +1,67 @@
+.header {
+  &__wrap {
+    display: flex;
+    background: $black;
+    justify-content: space-between;
+    height: 72px;
+  }
+
+  &__logo {
+    margin-top: 11px;
+    height: 34px;
+    width: 45px;
+  }
+
+  &__button {
+    height: 56px;
+    width: 56px;
+    padding: 0;
+    margin-right: -15px;
+    background-color: $black;
+    background-image: url("../img/icons/menu-burger.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    transition: background-color 0.1s;
+
+    &:hover {
+      background-color: #77b900;
+    }
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__nav {
+    display: none;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    background-color: $black;
+    width: 100%;
+    height: calc(100vh - 56px);
+  }
+
+  &__menu {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+
+    &__link {
+      text-transform: uppercase;
+      padding: 14px 0;
+      &:hover {
+        background-color: #77b900;
+      }
+      &_item {
+        color: $white;
+        text-decoration: none;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
