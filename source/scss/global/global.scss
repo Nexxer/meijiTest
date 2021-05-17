@@ -4,11 +4,27 @@
   background-color: $black;
   min-height: 100vh
 }
+
+.intro {
+
+  &__title {
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__sub-title {
+    text-align: center;
+    max-width: 730px;
+    margin: 20px auto 50px;
+  }
+}
+
 .container {
-	@include make-container();
-	@include make-container-max-widths();
+  @include make-container();
+  @include make-container-max-widths();
 }
 
 img {
-	@include img-fluid();
+  @include img-fluid();
 }
