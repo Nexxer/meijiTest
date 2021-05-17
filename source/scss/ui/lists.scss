@@ -1,24 +1,52 @@
 .cards {
   list-style: none;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) );
   grid-gap: 30px;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .card {
+  position: relative;
+
   &__title {
+    margin-top: 37px;
     text-transform: uppercase;
+    text-align: center;
 
     &_pick {
       color: #77b900;
     }
   }
-  &__icon{
+
+  &__icon {
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 71px;
+    width: 100%;
   }
-  svg {
 
+  svg {
+    display: block;
+    margin: 0 auto;
+    fill: none;
+    stroke: $white;
+  }
+
+  &:hover {
+    & svg {
+      fill: #77b900;
+      fill-opacity: 25%;
+      stroke: #77b900;
+    }
+
+    //background: #77b900;
   }
 }
