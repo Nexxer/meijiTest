@@ -1,0 +1,24 @@
+.cards {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  padding: 0;
+}
+
+.card {
+  &__title {
+    text-transform: uppercase;
+
+    &_pick {
+      color: #77b900;
+    }
+  }
+  &__icon{
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  svg {
+
+  }
+}
