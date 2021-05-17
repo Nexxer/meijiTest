@@ -23,6 +23,7 @@
       margin-right: 14px;
     }
   }
+
   &__button {
     height: 56px;
     width: 56px;
@@ -88,7 +89,7 @@
     text-align: left;
 
     @include media-breakpoint-up(md) {
-    flex-direction: row;
+      flex-direction: row;
 
     }
 
@@ -100,7 +101,7 @@
 
       @include media-breakpoint-up(md) {
         display: initial;
-          padding: 31px 24px;
+        padding: 31px 24px;
       }
 
       &:hover {
@@ -130,7 +131,7 @@
         margin: 0;
       }
 
-        & li:not(:first-child) {
+      & li:not(:first-child) {
         margin-left: 12px;
       }
     }
