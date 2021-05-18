@@ -4,20 +4,30 @@
   grid-template-columns: repeat( auto-fit, minmax(255px, 1fr) );
   grid-gap: 30px;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 }
 
 .card {
   position: relative;
 
   &__title {
+    font: $headline3Regular;
     margin-top: 37px;
     text-transform: uppercase;
-    text-align: center;
+    letter-spacing: 0.25px;
 
     &_pick {
+      font: $headline3;
       color: #77b900;
     }
+  }
+
+  &__text {
+    margin: 13px 0 0;
+    color: #E1E1E1;
+    font: $body1;
+    letter-spacing: 0.3px;
+
   }
 
   &__icon {
