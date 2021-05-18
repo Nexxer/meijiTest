@@ -39,7 +39,7 @@
     padding: 15.5px 58px;
     font-size: 18px;
     line-height: 21px;
-    background: $green-main;
+    background: $main-color;
     letter-spacing: $letter-spacing-base;
     color: $white;
     box-sizing: border-box;
@@ -58,8 +58,8 @@
 
     &:hover {
       background: #000000;
-      border-color: $green-main;
-      box-shadow: 0 0 10px $green-main;
+      border-color: $main-color;
+      box-shadow: 0 0 10px $main-color;
     }
   }
 }

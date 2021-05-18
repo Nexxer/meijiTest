@@ -29,7 +29,10 @@ $link-color:                               $white;
 $link-decoration:                          none;
 $link-hover-color:                         $white;
 $link-hover-decoration:                    none;
-$green-main:                               #77B900;
+$main-color:                               #77B900;
+
+$modal-backdrop-bg: #000;
+$modal-backdrop-opacity: .8;
 
 //Grids
 $grid-breakpoints: (

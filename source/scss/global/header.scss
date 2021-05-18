@@ -40,7 +40,7 @@
     }
 
     &:hover {
-      background-color: $green-main;
+      background-color: $main-color;
     }
 
     &:focus {
@@ -95,7 +95,7 @@
       }
 
       &:hover {
-        background-color: $green-main;
+        background-color: $main-color;
       }
 
       &_item {
@@ -134,7 +134,7 @@
       }
 
       &:hover svg {
-        fill: $green-main;
+        fill: $main-color;
       }
     }
   }

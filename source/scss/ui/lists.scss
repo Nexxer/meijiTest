@@ -27,7 +27,7 @@
 
     &_pick {
       font: $headline3;
-      color: $green-main;
+      color: $main-color;
     }
   }
 
@@ -61,9 +61,9 @@
 
   &:hover {
     & svg {
-      fill: $green-main;
-      fill-opacity: 25%;
-      stroke: $green-main;
+      fill: $main-color;
+      fill-opacity: 0.25;
+      stroke: $main-color;
     }
   }
 }
