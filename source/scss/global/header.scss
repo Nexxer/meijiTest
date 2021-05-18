@@ -1,7 +1,6 @@
 .header {
   &__wrap {
     display: flex;
-    background: $black;
     justify-content: space-between;
     height: 72px;
 
@@ -41,7 +40,7 @@
     }
 
     &:hover {
-      background-color: #77b900;
+      background-color: $green-main;
     }
 
     &:focus {
@@ -57,7 +56,6 @@
     position: absolute;
     top: 56px;
     left: 0;
-    background-color: $black;
     width: 100%;
     min-height: calc(100vh - 56px);
 
@@ -83,7 +81,6 @@
 
     @include media-breakpoint-up(md) {
       flex-direction: row;
-
     }
 
     &__link {
@@ -98,18 +95,12 @@
       }
 
       &:hover {
-        background-color: #77b900;
+        background-color: $green-main;
       }
 
       &_item {
-        color: $white;
         font: $body1;
-        letter-spacing: 0.3px;
-        text-decoration: none;
-
-        &:hover {
-          color: $white;
-        }
+        letter-spacing: $letter-spacing-base + 0.05;
       }
     }
   }
@@ -143,7 +134,7 @@
       }
 
       &:hover svg {
-        fill: #77b900;
+        fill: $green-main;
       }
     }
   }

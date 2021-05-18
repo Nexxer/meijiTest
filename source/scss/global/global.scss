@@ -3,7 +3,7 @@
   color: $white;
   min-height: 100vh;
   padding-bottom: 62px;
-  background-color: $black;
+  background-color: $body-bg;
   background-image: url('./../img/bg.png');
   background-position: bottom;
   background-repeat: no-repeat;
@@ -11,14 +11,18 @@
 
 .intro {
   font: $body1;
-  letter-spacing: 0.3px;
+  letter-spacing: $letter-spacing-base + 0.05;
 
   &__title {
-    margin-top: 60px;
+    margin-top: 44px;
     text-transform: uppercase;
     text-align: center;
     font: $headline3;
-    letter-spacing: 0.25px;
+    letter-spacing: $letter-spacing-base;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-top: 60px;
   }
 
   &__sub-title {
@@ -35,14 +39,18 @@
     padding: 15.5px 58px;
     font-size: 18px;
     line-height: 21px;
-    background: #77B900;
-    letter-spacing: 0.25px;
+    background: $green-main;
+    letter-spacing: $letter-spacing-base;
     color: $white;
     box-sizing: border-box;
     border: 2px solid transparent;
     outline: none;
     transition: 0.3s;
+    width: 100%;
 
+    @include media-breakpoint-up(sm) {
+      width: auto;
+    }
 
     &:focus {
       outline: none;
@@ -50,8 +58,8 @@
 
     &:hover {
       background: #000000;
-      border-color: #77B900;
-      box-shadow: 0 0 10px #77B900;
+      border-color: $green-main;
+      box-shadow: 0 0 10px $green-main;
     }
   }
 }

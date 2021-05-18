@@ -23,12 +23,13 @@
 $white:                                    #ffffff;
 $black:                                    #000000;
 
-$body-bg:                                  $white;
+$body-bg:                                  $black;
 $body-color:                               $black;
-$link-color:                               $black;
-$link-decoration:                          underline;
-$link-hover-color:                         $black;
+$link-color:                               $white;
+$link-decoration:                          none;
+$link-hover-color:                         $white;
 $link-hover-decoration:                    none;
+$green-main:                               #77B900;
 
 //Grids
 $grid-breakpoints: (
@@ -55,9 +56,17 @@ $btn-font-family:                          $font-family-secondary;
 $headings-font-weight:                     700;
 $font-size-base:                           1rem;
 $font-size-sm:                             1rem;
+$headline1:                                700 42px/66px 'PlayBold', sans-serif;
+$headline2:                                700 33px/53px 'PlayBold', sans-serif;
+$headline3:                                700 26px/36px 'PlayBold', sans-serif;
+$headline3Regular:                         400 26px/36px 'PlayRegular', sans-serif;
+$subtitle1:                                700 20px/34px 'RobotoBold', sans-serif;
+$body1:                                    400 16px/28px 'RobotoRegular', sans-serif;
+$caption:                                  400 13px/24px 'RobotoRegular', sans-serif;
 
 $line-height-base:                         1.75;
 $paragraph-margin-bottom-base:             28px;
+$letter-spacing-base:                      0.25px;
 
 //if we have common margin-bottom for all headings we can change this value
 $headings-margin-bottom:                   0;
