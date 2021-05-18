@@ -1,12 +1,11 @@
 #helloModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
-	.modal-dialog(role='document')
+	.modal-dialog.modal-dialog-centered(role='document')
 		.modal-content
-			.modal-header
-				h5#exampleModalLabel.modal-title Gulp is watching you!
+			.modal-body
 				button.close(type='button' data-dismiss='modal' aria-label='Close')
 					span(aria-hidden='true') &times;
-			.modal-body
-				| 'Hello world' from main.js
-			.modal-footer
-				button.btn.btn-secondary(type='button' data-dismiss='modal') Oh...
-				button.btn.btn-primary(type='button') No way!
+				h5#exampleModalLabel.modal-title преимущества g-sync
+					form
+						input(placeholder='Имя' type='text' name='name' required=true)
+						input(placeholder='Mail' type='email' name='email' required=true)
+						button.btn.btn-primary(type='submit') Купить
