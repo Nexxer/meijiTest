@@ -33,9 +33,10 @@
       font: $body1;
       letter-spacing: $letter-spacing-base + 0.05;
 
-      &::placeholder{
+      &::placeholder {
         color: $black;
       }
+
       &:focus {
         outline: none;
         border: 2px solid $main-color;
@@ -55,19 +56,27 @@
       border: 2px solid transparent;
       outline: none;
       transition: 0.3s;
-      max-width: 192px;
+      width: 100%;
       padding: 15.5px 60px;
+
+      @include media-breakpoint-up(sm) {
+        max-width: 192px;
+      }
     }
   }
 }
 
 .modal-content {
   background-color: $black;
-  padding: 71px 92px;
+  padding: 71px 20px;
   border: 2px solid $main-color;
   border-radius: 0;
   box-sizing: border-box;
   box-shadow: 0 0 20px rgba(119, 185, 0, 0.5);
+
+  @include media-breakpoint-up(sm) {
+    padding: 71px 92px;
+  }
 }
 
 .modal-dialog {
