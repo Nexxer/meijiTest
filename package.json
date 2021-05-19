@@ -2,9 +2,9 @@
   "dependencies": {
     "bootstrap": "4.4.1",
     "bootstrap-gulp": "3.1.5-beta",
+    "gulp": "^4.0.2",
     "magnific-popup": "1.1.0",
-    "roboto-fontface-pre-css": "0.0.3",
-    "gulp": "^4.0.2"
+    "roboto-fontface-pre-css": "0.0.3"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0"
