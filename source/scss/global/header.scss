@@ -93,8 +93,10 @@
       padding: 14px 0;
 
       @include media-breakpoint-up(md) {
+        height: 100%;
         display: initial;
-        padding: 31px 24px;
+        min-width: 139px;
+        padding: 0;
       }
 
       &:hover {
@@ -102,6 +104,10 @@
       }
 
       &_item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
         font: $body1;
         letter-spacing: $letter-spacing-base + 0.05;
       }
