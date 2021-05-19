@@ -51,6 +51,8 @@
 
   &__nav {
     display: none;
+    background-color: $black;
+    z-index: 2;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
@@ -61,6 +63,7 @@
 
     @include media-breakpoint-up(md) {
       display: flex;
+      background-color: transparent;
       position: initial;
       flex-direction: row;
       justify-content: space-between;
