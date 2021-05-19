@@ -1,0 +1,75 @@
+.modal {
+  &__button-close {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: transparent;
+    border: none;
+    background-image: url("./../../img/icons/icon-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font: $headline3;
+    letter-spacing: $letter-spacing-base;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &__input {
+      margin-top: 20px;
+      min-height: 56px;
+      padding-left: 20px;
+      color: $black;
+      font: $body1;
+      letter-spacing: $letter-spacing-base + 0.05;
+
+      &::placeholder{
+        color: $black;
+      }
+      &:focus {
+        outline: none;
+        border: 2px solid $main-color;
+        box-shadow: 0 0 20px 6px rgba(119, 185, 0, 0.5);
+      }
+    }
+
+    &__button-buy {
+      margin: 20px auto 0;
+      font-family: Play, sans-serif;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 21px;
+      background: $main-color;
+      letter-spacing: $letter-spacing-base;
+      color: $white;
+      border: 2px solid transparent;
+      outline: none;
+      transition: 0.3s;
+      max-width: 192px;
+      padding: 15.5px 60px;
+    }
+  }
+}
+
+.modal-content {
+  background-color: $black;
+  padding: 71px 92px;
+  border: 2px solid $main-color;
+  border-radius: 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(119, 185, 0, 0.5);
+}
+
+.modal-dialog {
+  max-width: 540px;
+}
